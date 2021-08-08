@@ -42,6 +42,13 @@ A frequency divider, also called a clock divider is a circuit that takes an inpu
 Phase-locked loop frequency synthesizers make use of frequency dividers to generate a frequency that is a multiple of a reference frequency. 
 A feedback divider is used to divide the VCO frequency with a factor to bring it back to the range of reference frequency to compute phase error. This enables us to lock different ranges of frequencies, just by changing the factor with which VCO frequency is divided. Till now we have implemented it using verilog A.
 
+## Outputs
+ <p align="center">
+<image height=400 width=800 src="https://user-images.githubusercontent.com/52507285/128627606-4c7494fb-0853-48b8-901f-1fff2ed0bac5.png">
+ <image height=400 width=800 src="https://user-images.githubusercontent.com/52507285/128627622-0a02e95c-ec3b-4045-bafb-d0f6704d15e8.png">
+  <image height=400 width=800 src="https://user-images.githubusercontent.com/52507285/128627500-8d57fca4-51b4-44d6-8729-949ce20fe848.png">
+   </p>
+
 
   
   
