@@ -16,8 +16,7 @@ If we want to obtain a multiple of reference frequency, A divide by N circuit is
 <p align="center">
 <image src="https://user-images.githubusercontent.com/52507285/128626154-bce9e137-2a93-470b-8910-c69dab8568e2.png" height=300 width=300> 
  </p>
- We wish to have our PLL lock despite the initial output frequency. A phase detector does not give a meaningful output when the frequency difference between the reference and output is quite large. A frequency detector might seem the immediate solution but again due to finite gain and offset, the convergence of the output frequency to input frequency is denied.  
-To overcome the problems of the phase detector and frequency detector we employ a circuit know as a Phase Frequency Detector. The working of Phase Frequency Detector is simple as it works as both a frequency and phase detector. So, when the frequency difference is quite large it works as a frequency detector and brings the output frequency close enough to the reference frequency. From there it works as a phase detector and ensures the convergence of the output frequency to the reference frequency.
+ The Phase Frequency Detector is a simple circuitry that detects the difference between the reference and VCO output phase\frequency.The output of a phase frequency detector is a signal which represents the phase\frequency difference of the reference and VCO output signal.This signal is further used by the consecutive circuitry to produce an average value which is fed to the VCO to control the output frequency. 
   
 ## Charge Pump
   
@@ -94,9 +93,19 @@ A feedback divider is used to divide the VCO frequency with a factor to bring it
   </p>
     
 ### Outputs
+    
+#### Transient Response
 <p align="center">
 <image height=400 width=800 src="https://user-images.githubusercontent.com/52507285/128627606-4c7494fb-0853-48b8-901f-1fff2ed0bac5.png">
+ </p>
+ 
+ #### Steady State Response
+ <p align="center">
 <image height=400 width=800 src="https://user-images.githubusercontent.com/52507285/128627622-0a02e95c-ec3b-4045-bafb-d0f6704d15e8.png">
+ </p>
+  
+  #### Frequency Vs Time
+ <p align="center">
 <image height=400 width=800 src="https://user-images.githubusercontent.com/52507285/128627500-8d57fca4-51b4-44d6-8729-949ce20fe848.png">
  </p>   
 
